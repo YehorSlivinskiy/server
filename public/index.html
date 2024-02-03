@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>welcome to my server</h1>
-    <a href="/contacts">my contacts</a>
+    <h1>Add new article:</h1>
+    <form action="/add" method="post">
+        <input type="text" placeholder="Author" id="author" name="author">
+        <br>
+        <label for="content">Content:</label>
+        <br>
+        <textarea name="content" id="content"></textarea>
+        <br>
+        <input type="submit" value="Add">
+    </form>
 </body>
 </html>
